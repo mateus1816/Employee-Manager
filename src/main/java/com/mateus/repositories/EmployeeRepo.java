@@ -8,5 +8,5 @@ import com.mateus.model.Employee;
 
 public interface EmployeeRepo extends JpaRepository<Employee, Long>{
 
-	Optional findEmployeeById(Long id);
+	Optional<Employee> findEmployeeById(Long id);
 }
