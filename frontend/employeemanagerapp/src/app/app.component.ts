@@ -9,7 +9,7 @@ import { EmployeeService } from './employee.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  public employees: Employee[] | undefined;
+  public employees: Employee[] = [];
 
   constructor(private employeeService: EmployeeService) {}
 
@@ -27,5 +27,6 @@ export class AppComponent implements OnInit {
       }
     );
   }
+  
 
 }
